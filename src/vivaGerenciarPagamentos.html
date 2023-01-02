@@ -271,29 +271,8 @@
                                 </span>
                                 <span class="text-sm font-semibold text-neutral-dark">GERENCIAR PAGAMENTOS</span>
                             </div>
-                            <div class="flex justify-end">
 
-                                <nav aria-label="Page navigation example">
-                                    <ul class="flex list-style-none">
-                                      <li class="page-item disabled"><a
-                                          class="page-link text-sm py-1 px-2 relative block border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-500 pointer-events-none focus:shadow-none"
-                                          href="#" tabindex="-1" aria-disabled="true">Anterior</a></li>
-                                      <li class="page-item"><a
-                                          class="page-link text-sm py-1 px-2 relative block border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
-                                          href="#">1</a></li>
-                                      <li class="page-item active"><a
-                                          class="page-link text-sm py-1 px-2 relative block border-0 bg-secondary outline-none transition-all duration-300 rounded text-white hover:text-white hover:bg-secondary shadow-md focus:shadow-md"
-                                          href="#">2 <span class="visually-hidden">(current)</span></a></li>
-                                      <li class="page-item"><a
-                                          class="page-link text-sm py-1 px-2 relative block border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
-                                          href="#">3</a></li>
-                                      <li class="page-item"><a
-                                          class="page-link text-sm py-1 px-2 relative block border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
-                                          href="#">Próximo</a></li>
-                                    </ul>
-                                  </nav>
-
-                            </div>
+                            
                             <!-- <div class="flex items-center">
                                 <span class="material-symbols-sharp" type="button" id="">
                                     <a href="#" class="text-negative-light hover:bg-negative-lighter/50 rounded-full px-1.5 py-1 h-fit transition" data-bs-toggle="tooltip" title="Descartar">close</a>
@@ -309,18 +288,81 @@
                             </div> -->
                         </header>
                         
-                        <main class="pt-4 ">
+                        <main class="pt-4">
+                            <div class="">
 
-                            
-                            <div class="grid grid-cols-12 gap-4">
+                                <div class="flex justify-between p-1">
+                                    <!-- Search Field / focus-within:w-56 -->
+                                    <div class="w-44 relative transition-all ease-in-out">
+                                        <input id="" type="text" class="peer input-floating focus-within:pr-11 pl-5 pr-10 rounded-full placeholder-neutral" placeholder="Pesquisar" />
+                                        <!-- <label for="pesquisar" class="label-floating">Pesquisar</label> -->
+                                        <span class="material-symbols-sharp absolute text-2xl right-2.5 top-1 text-primary">
+                                            <a href="#">search</a>
+                                        </span>
+                                    </div>
+
+                                    <div class="flex justify-end items-center gap-4 pr-2">
+
+                                        <!-- PAGINATION -->
+                                        <nav aria-label="">
+                                            <ul class="flex gap-1 list-style-none">
+                                            <li class="page-item">
+                                                <a class="!rounded-full flex page-link text-sm py-1 px-1 relative block border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none" href="#" tabindex="-1" aria-disabled="false">
+                                                    <span class="material-symbols-sharp">chevron_left</span>
+                                                </a>
+                                            </li>
+                                            <li class="page-item"><a
+                                                class="page-link text-sm py-1 px-2 relative block border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+                                                href="#">1</a></li>
+                                            <li class="page-item active"><a
+                                                class="page-link text-sm py-1 px-2 relative block border-0 bg-secondary outline-none transition-all duration-300 rounded text-white hover:text-white hover:bg-secondary shadow-md focus:shadow-md"
+                                                href="#">2 <span class="visually-hidden">(current)</span></a></li>
+                                            <li class="page-item"><a
+                                                class="page-link text-sm py-1 px-2 relative block border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+                                                href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="!rounded-full flex page-link text-sm py-1 px-1 relative block border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none" href="#">
+                                                    <span class="material-symbols-sharp">chevron_right</span>
+                                                </a>
+                                            </li>
+                                            </ul>
+                                        </nav>
+                                        <!-- SHOW ITENS -->
+                                        <div class="col-span-2 relative">
+                                            <button id="" type="button" class="dropdown-toggle pl-3 pr-10 py-2 text-left peer input-floating" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span class="block truncate">25</span>
+                                                <span class="material-symbols-sharp text-neutral-dark absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">expand_more</span>
+                                            </button>
+                                            
+                                            <ul class="dropdown-menu hidden absolute inset-y-2 z-10 mt-1 w-full bg-white shadow-lg max-h-48 h-fit rounded-md text-sm ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none" aria-labelledby="" >
+                                                
+                                                <li class="text-gray-900 hover:bg-primary-lighter cursor-default select-none relative py-2 px-3" id="" role="option">
+                                                    <span class="font-normal block truncate">25</span>
+                                                </li>
+                                                <li class="text-gray-900 hover:bg-primary-lighter cursor-default select-none relative py-2 px-3" id="" role="option">
+                                                    <span class="font-normal block truncate">50</span>
+                                                </li>
+                                                <li class="text-gray-900 hover:bg-primary-lighter cursor-default select-none relative py-2 px-3" id="" role="option">
+                                                <span class="font-normal block truncate">Todos</span>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    
+                                    </div>
+                                </div>
 
                                 <!-- TABELA -->
-                                <div class="h-[calc(100vh-183px)] overflow-y-auto col-span-12 border-b border-neutral-light/50 mt-2">
+                                <div class="h-[calc(100vh-215px)] overflow-y-auto col-span-12 border-b border-neutral-light/50">
                                     <table class="min-w-full divide-y divide-gray-200">
+
                                         <thead class="sticky top-0 bg-white">
                                             <tr class="">
-                                                <th scope="col" class="px-3 py-3 text-left text-xs font-semibold text-neutral-dark uppercase tracking-wider table-auto">
-                                                    <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-secondary checked:border-seconbg-secondary focus:outline-none transition duration-200 my-1 align-top bg-no-repeat bg-center bg-contain float-left cursor-pointer" type="checkbox" value="" id="flexCheckDefault3">
+                                                <th scope="col" class="flex gap-2 px-3 py-3 text-left text-xs font-semibold text-neutral-dark uppercase tracking-wider table-auto">
+                                                    <input data-bs-toggle="tooltip" title="Selecionar todos" class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-secondary checked:border-seconbg-secondary focus:outline-none transition duration-200 my-1 align-top bg-no-repeat bg-center bg-contain float-left cursor-pointer" type="checkbox" value="" id="flexCheckDefault3">
+                                                    <span data-bs-toggle="tooltip" title="Gerar pagamento para placas selecionadas" class="material-symbols-sharp pointer">
+                                                        payments
+                                                    </span>
                                                 </th>
                                                 <th scope="col"
                                                     class="px-3 py-3 text-left text-xs font-semibold text-neutral-dark uppercase tracking-wider table-auto">
@@ -424,11 +466,11 @@
                                                 </td>
                                                 <td class="whitespace-nowrap text-center text-sm font-medium">
     
-                                                    <span class="material-symbols-sharp" type="button" id="menuacaoboleto1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <span class="material-symbols-sharp" type="button" id="" data-bs-toggle="dropdown" aria-expanded="false">
                                                         <a href="#" type="button" id="" data-bs-toggle="tooltip" title="Menu" class="text-primary hover:bg-primary-lighter rounded-full px-1 py-1 h-fit transition">more_vert</a>
                                                     </span>
                                                     <!-- Dropdown Menu Ferramentas -->
-                                                    <ul class="dropdown-menu min-w-max relative hidden bg-white text-base z-50 float-left list-none text-left rounded-xl shadow-lg mt-1 m-0 border-none" aria-labelledby="#menuacaoboleto1">
+                                                    <ul class="dropdown-menu min-w-max relative hidden bg-white text-base z-50 float-left list-none text-left rounded-xl shadow-lg mt-1 m-0 border-none" aria-labelledby="">
                                                         <li>
                                                             <!-- Item Dropdown Visualizar -->
                                                             <a class="text-xs py-2 px-4 font-medium flex justify-start items-center w-full whitespace-nowrap bg-transparent text-neutral hover:text-neutral-darker hover:bg-primary-lighter hover:rounded-t-xl" href="#">
@@ -461,11 +503,11 @@
                                                 </td>
                                                 <td class="whitespace-nowrap text-center text-sm font-medium">
     
-                                                    <span class="material-symbols-sharp" type="button" id="menuacaoboleto" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <span class="material-symbols-sharp" type="button" id="" data-bs-toggle="dropdown" aria-expanded="false">
                                                         <a href="#" type="button" id="" data-bs-toggle="tooltip" title="Menu" class="text-primary border hover:bg-primary-lighter rounded-full px-1 py-1 h-fit transition">more_vert</a>
                                                     </span>
                                                     <!-- Dropdown Menu Ferramentas -->
-                                                    <ul class="dropdown-menu min-w-max relative hidden bg-white text-base z-50 float-left list-none text-left rounded-xl shadow-lg mt-1 m-0 border-none" aria-labelledby="#menuacaoboleto">
+                                                    <ul class="dropdown-menu min-w-max relative hidden bg-white text-base z-50 float-left list-none text-left rounded-xl shadow-lg mt-1 m-0 border-none" aria-labelledby="">
                                                         <li>
                                                             <!-- Item Dropdown Visualizar -->
                                                             <a class="text-xs py-2 px-4 font-medium flex justify-start items-center w-full whitespace-nowrap bg-transparent text-neutral hover:text-neutral-darker hover:bg-primary-lighter hover:rounded-t-xl" href="#">
@@ -498,11 +540,11 @@
                                                 </td>
                                                 <td class="whitespace-nowrap text-center text-sm font-medium">
     
-                                                    <span class="material-symbols-sharp" type="button" id="menuacaoboleto1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <span class="material-symbols-sharp" type="button" id="" data-bs-toggle="dropdown" aria-expanded="false">
                                                         <a href="#" type="button" id="" data-bs-toggle="tooltip" title="Menu" class="text-primary hover:bg-primary-lighter rounded-full px-1 py-1 h-fit transition">more_vert</a>
                                                     </span>
                                                     <!-- Dropdown Menu Ferramentas -->
-                                                    <ul class="dropdown-menu min-w-max relative hidden bg-white text-base z-50 float-left list-none text-left rounded-xl shadow-lg mt-1 m-0 border-none" aria-labelledby="#menuacaoboleto1">
+                                                    <ul class="dropdown-menu min-w-max relative hidden bg-white text-base z-50 float-left list-none text-left rounded-xl shadow-lg mt-1 m-0 border-none" aria-labelledby="">
                                                         <li>
                                                             <!-- Item Dropdown Visualizar -->
                                                             <a class="text-xs py-2 px-4 font-medium flex justify-start items-center w-full whitespace-nowrap bg-transparent text-neutral hover:text-neutral-darker hover:bg-primary-lighter hover:rounded-t-xl" href="#">
@@ -535,11 +577,11 @@
                                                 </td>
                                                 <td class="whitespace-nowrap text-center text-sm font-medium">
     
-                                                    <span class="material-symbols-sharp" type="button" id="menuacaoboleto" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <span class="material-symbols-sharp" type="button" id="" data-bs-toggle="dropdown" aria-expanded="false">
                                                         <a href="#" type="button" id="" data-bs-toggle="tooltip" title="Menu" class="text-primary border hover:bg-primary-lighter rounded-full px-1 py-1 h-fit transition">more_vert</a>
                                                     </span>
                                                     <!-- Dropdown Menu Ferramentas -->
-                                                    <ul class="dropdown-menu min-w-max relative hidden bg-white text-base z-50 float-left list-none text-left rounded-xl shadow-lg mt-1 m-0 border-none" aria-labelledby="#menuacaoboleto">
+                                                    <ul class="dropdown-menu min-w-max relative hidden bg-white text-base z-50 float-left list-none text-left rounded-xl shadow-lg mt-1 m-0 border-none" aria-labelledby="">
                                                         <li>
                                                             <!-- Item Dropdown Visualizar -->
                                                             <a class="text-xs py-2 px-4 font-medium flex justify-start items-center w-full whitespace-nowrap bg-transparent text-neutral hover:text-neutral-darker hover:bg-primary-lighter hover:rounded-t-xl" href="#">
@@ -572,11 +614,11 @@
                                                 </td>
                                                 <td class="whitespace-nowrap text-center text-sm font-medium">
     
-                                                    <span class="material-symbols-sharp" type="button" id="menuacaoboleto1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <span class="material-symbols-sharp" type="button" id="" data-bs-toggle="dropdown" aria-expanded="false">
                                                         <a href="#" type="button" id="" data-bs-toggle="tooltip" title="Menu" class="text-primary hover:bg-primary-lighter rounded-full px-1 py-1 h-fit transition">more_vert</a>
                                                     </span>
                                                     <!-- Dropdown Menu Ferramentas -->
-                                                    <ul class="dropdown-menu min-w-max relative hidden bg-white text-base z-50 float-left list-none text-left rounded-xl shadow-lg mt-1 m-0 border-none" aria-labelledby="#menuacaoboleto1">
+                                                    <ul class="dropdown-menu min-w-max relative hidden bg-white text-base z-50 float-left list-none text-left rounded-xl shadow-lg mt-1 m-0 border-none" aria-labelledby="">
                                                         <li>
                                                             <!-- Item Dropdown Visualizar -->
                                                             <a class="text-xs py-2 px-4 font-medium flex justify-start items-center w-full whitespace-nowrap bg-transparent text-neutral hover:text-neutral-darker hover:bg-primary-lighter hover:rounded-t-xl" href="#">
@@ -609,11 +651,11 @@
                                                 </td>
                                                 <td class="whitespace-nowrap text-center text-sm font-medium">
     
-                                                    <span class="material-symbols-sharp" type="button" id="menuacaoboleto" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <span class="material-symbols-sharp" type="button" id="" data-bs-toggle="dropdown" aria-expanded="false">
                                                         <a href="#" type="button" id="" data-bs-toggle="tooltip" title="Menu" class="text-primary border hover:bg-primary-lighter rounded-full px-1 py-1 h-fit transition">more_vert</a>
                                                     </span>
                                                     <!-- Dropdown Menu Ferramentas -->
-                                                    <ul class="dropdown-menu min-w-max relative hidden bg-white text-base z-50 float-left list-none text-left rounded-xl shadow-lg mt-1 m-0 border-none" aria-labelledby="#menuacaoboleto">
+                                                    <ul class="dropdown-menu min-w-max relative hidden bg-white text-base z-50 float-left list-none text-left rounded-xl shadow-lg mt-1 m-0 border-none" aria-labelledby="">
                                                         <li>
                                                             <!-- Item Dropdown Visualizar -->
                                                             <a class="text-xs py-2 px-4 font-medium flex justify-start items-center w-full whitespace-nowrap bg-transparent text-neutral hover:text-neutral-darker hover:bg-primary-lighter hover:rounded-t-xl" href="#">
@@ -646,11 +688,11 @@
                                                 </td>
                                                 <td class="whitespace-nowrap text-center text-sm font-medium">
     
-                                                    <span class="material-symbols-sharp" type="button" id="menuacaoboleto1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <span class="material-symbols-sharp" type="button" id="" data-bs-toggle="dropdown" aria-expanded="false">
                                                         <a href="#" type="button" id="" data-bs-toggle="tooltip" title="Menu" class="text-primary hover:bg-primary-lighter rounded-full px-1 py-1 h-fit transition">more_vert</a>
                                                     </span>
                                                     <!-- Dropdown Menu Ferramentas -->
-                                                    <ul class="dropdown-menu min-w-max relative hidden bg-white text-base z-50 float-left list-none text-left rounded-xl shadow-lg mt-1 m-0 border-none" aria-labelledby="#menuacaoboleto1">
+                                                    <ul class="dropdown-menu min-w-max relative hidden bg-white text-base z-50 float-left list-none text-left rounded-xl shadow-lg mt-1 m-0 border-none" aria-labelledby="">
                                                         <li>
                                                             <!-- Item Dropdown Visualizar -->
                                                             <a class="text-xs py-2 px-4 font-medium flex justify-start items-center w-full whitespace-nowrap bg-transparent text-neutral hover:text-neutral-darker hover:bg-primary-lighter hover:rounded-t-xl" href="#">
@@ -683,11 +725,11 @@
                                                 </td>
                                                 <td class="whitespace-nowrap text-center text-sm font-medium">
     
-                                                    <span class="material-symbols-sharp" type="button" id="menuacaoboleto" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <span class="material-symbols-sharp" type="button" id="" data-bs-toggle="dropdown" aria-expanded="false">
                                                         <a href="#" type="button" id="" data-bs-toggle="tooltip" title="Menu" class="text-primary border hover:bg-primary-lighter rounded-full px-1 py-1 h-fit transition">more_vert</a>
                                                     </span>
                                                     <!-- Dropdown Menu Ferramentas -->
-                                                    <ul class="dropdown-menu min-w-max relative hidden bg-white text-base z-50 float-left list-none text-left rounded-xl shadow-lg mt-1 m-0 border-none" aria-labelledby="#menuacaoboleto">
+                                                    <ul class="dropdown-menu min-w-max relative hidden bg-white text-base z-50 float-left list-none text-left rounded-xl shadow-lg mt-1 m-0 border-none" aria-labelledby="">
                                                         <li>
                                                             <!-- Item Dropdown Visualizar -->
                                                             <a class="text-xs py-2 px-4 font-medium flex justify-start items-center w-full whitespace-nowrap bg-transparent text-neutral hover:text-neutral-darker hover:bg-primary-lighter hover:rounded-t-xl" href="#">

@@ -569,8 +569,13 @@ video {
   background-color: transparent;
 }
 
+::-webkit-scrollbar-track-piece {
+  border-radius: 9999px;
+}
+
 ::-webkit-scrollbar {
   width: 0.5rem;
+  border-radius: 9999px;
   --tw-bg-opacity: 1;
   background-color: rgb(232 242 243 / var(--tw-bg-opacity));
 }
@@ -1344,12 +1349,24 @@ video {
   height: calc(100vh - 444px);
 }
 
-.h-\[calc\(100vh-183px\)\] {
-  height: calc(100vh - 183px);
+.h-\[calc\(100vh-170px\)\] {
+  height: calc(100vh - 170px);
 }
 
 .h-4 {
   height: 1rem;
+}
+
+.h-\[calc\(100vh-2070px\)\] {
+  height: calc(100vh - 2070px);
+}
+
+.h-\[calc\(100vh-207px\)\] {
+  height: calc(100vh - 207px);
+}
+
+.h-\[calc\(100vh-215px\)\] {
+  height: calc(100vh - 215px);
 }
 
 .max-h-48 {
@@ -1494,6 +1511,10 @@ video {
   gap: 1.5rem;
 }
 
+.gap-1 {
+  gap: 0.25rem;
+}
+
 .divide-y > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-y-reverse: 0;
   border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
@@ -1548,6 +1569,10 @@ video {
 
 .rounded-sm {
   border-radius: 0.125rem;
+}
+
+.\!rounded-full {
+  border-radius: 9999px !important;
 }
 
 .border-2 {
@@ -1741,6 +1766,10 @@ video {
 
 .pr-4 {
   padding-right: 1rem;
+}
+
+.pt-2 {
+  padding-top: 0.5rem;
 }
 
 .text-left {
